@@ -1,0 +1,11 @@
+{
+    "name": "essql",
+    "version": "1.0.0",
+    "description": "SQL Syntax wrapper for ElasticSearch.",
+    "repository": "https://github.com/brian-l/essql",
+    "license": "MIT",
+    "dependencies": {
+        "pegjs": "0.9.0",
+        "underscore": "1.8.3"
+    }
+}
