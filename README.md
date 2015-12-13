@@ -4,9 +4,8 @@ you have to be a lunatic to even think about using this.
 
 ## example output
 
-* 
-    Input: ``SELECT `user_name`,`_id`,`_parent` FROM users;``
-    Output: ``{
+####  ``SELECT `user_name`,`_id`,`_parent` FROM users;``
+``{
     "query": {
         "match_all": {}
     },
@@ -18,9 +17,8 @@ you have to be a lunatic to even think about using this.
 }``
 
 
-* 
-    Input: ``SELECT `user_name`,`_id`,`_parent` FROM users WHERE `login_count` == 0 AND `registered_date` == '2015-12-13';``
-    Output: ``{
+#### ``SELECT `user_name`,`_id`,`_parent` FROM users WHERE `login_count` == 0 AND `registered_date` == '2015-12-13';``
+``{
     "query": {
         "filtered": {
             "filter": {
@@ -51,9 +49,8 @@ you have to be a lunatic to even think about using this.
 }``
 
 
-* 
-    Input: ``SELECT `user_name`,`_id`,`_parent` FROM users WHERE `login_count` == 0 AND `registered_date` == '2015-12-13' AND `email` != 'brian@example.com';``
-    Output: ``{
+#### ``SELECT `user_name`,`_id`,`_parent` FROM users WHERE `login_count` == 0 AND `registered_date` == '2015-12-13' AND `email` != 'brian@example.com';``
+``{
     "query": {
         "filtered": {
             "filter": {
