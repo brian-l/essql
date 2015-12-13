@@ -12,6 +12,7 @@ function parseSQL(statement) {
     console.log("query is:", JSON.stringify(parsed.query, null, 4));
 };
 
+// parseSQL("SELECT `user_name`,`_id`,`_parent` FROM users;");
 // parseSQL("SELECT `user_name`,`_id`,`_parent` FROM users WHERE `login_count` == 0;");
 // parseSQL("SELECT `user_name`,`_id`,`_parent` FROM users WHERE `login_count` == 0 AND `registered_date` == '2015-12-13';");
 parseSQL("SELECT `user_name`,`_id`,`_parent` FROM users WHERE `login_count` == 0 AND `registered_date` == '2015-12-13' AND `email` != 'brian@example.com';");
